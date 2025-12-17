@@ -219,6 +219,16 @@ nav a:hover::after {
 }
 
 /* CLICKABLE PROJECT CARD */
+.project-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit;       /* Keep text color */
+    display: inline-block; /* Ensure the whole card is clickable */
+}
+
+.project-link:hover {
+    text-decoration: none;
+}
+
 .project-card {
     background: #222;
     width: 300px;
@@ -263,16 +273,6 @@ nav a:hover::after {
     font-size: 0.8rem;
     color: #FFD700;
     margin: 0 20px 15px;
-}
-
-/* ACTIONS */
-.project-actions {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.project-btn i {
-    margin-right: 8px;
 }
 
 /* =======================
