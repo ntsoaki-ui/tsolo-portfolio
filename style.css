@@ -90,29 +90,6 @@ nav a:hover::after {
     transform: translateY(-2px);
 }
 
-/* Download CV button */
-.download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 28px;
-    background: #FFD700;
-    color: #000;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
-}
-
-.download-btn:hover {
-    background: #e6c200;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-    color: #000;
-}
-
 /* =======================
    HERO SECTION
 ======================= */
@@ -241,30 +218,30 @@ nav a:hover::after {
     flex-wrap: wrap;
 }
 
-/* CLICKABLE PROJECT CARD */
-.project-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit;       
-    display: inline-block;
-}
-
-.project-link:hover {
-    text-decoration: none;
-}
-
+/* PROJECT CARD */
 .project-card {
     background: #222;
     width: 300px;
     border-radius: 16px;
     border: 2px solid #FFD700;
     overflow: hidden;
-    cursor: pointer;
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .project-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 15px 35px rgba(255,215,0,0.4);
+}
+
+/* REMOVE UNDERLINES FROM PROJECT LINKS */
+.project-card a,
+.project-card a:link,
+.project-card a:visited,
+.project-card a:hover,
+.project-card a:active,
+.project-card a:focus {
+    text-decoration: none !important;
+    color: inherit;
 }
 
 /* IMAGE */
@@ -296,6 +273,28 @@ nav a:hover::after {
     font-size: 0.8rem;
     color: #FFD700;
     margin: 0 20px 15px;
+}
+
+/* PROJECT BUTTON LINKS */
+.project-links {
+    margin: 15px 20px 20px;
+}
+
+.project-links a {
+    background: #FFD700;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #e6c200;
+    transform: translateY(-2px);
 }
 
 /* =======================
